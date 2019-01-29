@@ -1,11 +1,11 @@
 .row > div {
     width: 9em;
     background-color: blueviolet;
-    height: 9em;
+    height: 2em;
     text-align : center;
     vertical-align: middle;
-    line-height: 9em;
-   font-size: 1em;
+    line-height: 2em;
+   font-size: 4em;
    font-weight: 900;
 }
 

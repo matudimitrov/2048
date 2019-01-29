@@ -12,10 +12,6 @@ function generateRandom() {
     generateRandom();
 }
 
-generateRandom();
-generateRandom();
-generateRandom();
-
 function moveLeft() {
     for (row = 0; row < arr.length; row++) {
         for (col = 0; col < arr[0].length; col++) {
@@ -124,7 +120,7 @@ function moveDown() {
     initializeMatrix();
 }
 
-moveDown();
+// moveDown();
 // for(r=0;r<arr.length;r++){
 //     for(c=0;c<arr[0].length;c++){
 //         process.stdout.write("" + arr[r][c]);
@@ -132,7 +128,7 @@ moveDown();
 //     console.log();
 // }
 // console.log();
-moveDown();
+// moveDown();
 // for(r=0;r<arr.length;r++){
 //     for(c=0;c<arr[0].length;c++){
 //         process.stdout.write("" + arr[r][c]);
@@ -140,7 +136,7 @@ moveDown();
 //     console.log();
 // }
 // console.log();
-moveDown();
+// moveDown();
 // for(r=0;r<arr.length;r++){
 //     for(c=0;c<arr[0].length;c++){
 //         process.stdout.write("" + arr[r][c]);
@@ -166,12 +162,10 @@ function initializeMatrix(){
 
 initializeMatrix();
 
-
 const KEY_UP=38;
 const KEY_DOWN=40;
 const KEY_LEFT=37;
 const KEY_RIGHT=39;
-
 
 document.body.addEventListener('keydown', event => {
     if (event.keyCode === KEY_UP) {
