@@ -15,24 +15,7 @@ function generateRandom() {
 generateRandom();
 generateRandom();
 generateRandom();
-// for(r=0;r<arr.length;r++){
-//     for(c=0;c<arr[0].length;c++){
-//         process.stdout.write("" + arr[r][c]);
-//     }
-//     console.log();
-// }
-// console.log();
 
-
-// function moveLeft(){
-// arr.forEach((row, r) => {
-//     row.forEach((element, c) => {
-//         while(element && c>=0 && arr[r][c-1]===0){
-//             c--;
-//         }
-//     })
-
-// });
 function moveLeft() {
     for (row = 0; row < arr.length; row++) {
         for (col = 0; col < arr[0].length; col++) {

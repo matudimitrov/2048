@@ -7,21 +7,17 @@
     line-height: 9em;
    font-size: 1em;
    font-weight: 900;
-   
-
-
-
-
-
-
 }
+
 .row > div:not(:last-child){
     border-right: 10px solid grey;
 }
+
 .row{
     display: flex;
     flex-direction: row;
 }
+
 .row:not(:last-child) {
     border-bottom: 10px solid grey;
 }
@@ -33,7 +29,4 @@
     margin : 0 auto;
     box-sizing: border-box;
     margin-top: 15px ;
-
-
-
 }
