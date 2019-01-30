@@ -148,6 +148,8 @@ function startGame() {
     //     console.log();
     // }
 
+    const COLORS = ['rgb(238, 228, 218)', 'rgb(237, 224, 200)', 'rgb(242, 177, 121)', 'rgb(245, 149, 99)', 'rgb(246, 124, 95)', 'rgb(246, 94, 59)', 'rgb(237, 207, 114)', 'rgb(237, 204, 97)', 'rgb(236, 200, 80)', 'rgb(237, 197, 63)', 'rgb(235, 192, 44)'];
+    const NUMBERS = [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048];
 
     function initializeMatrix() {
         for (let r = 0; r < arr.length; r++) {
@@ -155,12 +157,13 @@ function startGame() {
                 var cell = document.getElementById(`cell${r}${c}`);
                 if (arr[r][c]) {
                     cell.innerText = arr[r][c];
+                    let index = NUMBERS.findIndex(e => e === arr[r][c]);
+                    cell.style.backgroundColor = COLORS[index];
                 } else {
                     cell.innerText = '';
+                    cell.style.backgroundColor = 'rgb(205, 193, 180)';
                 }
-
             }
-
         }
     }
 
