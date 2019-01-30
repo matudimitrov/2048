@@ -148,8 +148,19 @@ function startGame() {
     //     console.log();
     // }
 
-    const COLORS = ['rgb(238, 228, 218)', 'rgb(237, 224, 200)', 'rgb(242, 177, 121)', 'rgb(245, 149, 99)', 'rgb(246, 124, 95)', 'rgb(246, 94, 59)', 'rgb(237, 207, 114)', 'rgb(237, 204, 97)', 'rgb(236, 200, 80)', 'rgb(237, 197, 63)', 'rgb(235, 192, 44)'];
-    const NUMBERS = [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048];
+    const COLORS = {
+        2: 'rgb(238, 228, 218)',
+        4: 'rgb(237, 224, 200)',
+        8: 'rgb(242, 177, 121)',
+        16: 'rgb(245, 149, 99)',
+        32: 'rgb(246, 124, 95)',
+        64: 'rgb(246, 94, 59)',
+        128: 'rgb(237, 207, 114)',
+        256: 'rgb(237, 204, 97)',
+        512: 'rgb(236, 200, 80)',
+        1024: 'rgb(237, 197, 63)',
+        2048: 'rgb(235, 192, 44)'
+    };
 
     function initializeMatrix() {
         for (let r = 0; r < arr.length; r++) {
@@ -157,8 +168,7 @@ function startGame() {
                 var cell = document.getElementById(`cell${r}${c}`);
                 if (arr[r][c]) {
                     cell.innerText = arr[r][c];
-                    let index = NUMBERS.findIndex(e => e === arr[r][c]);
-                    cell.style.backgroundColor = COLORS[index];
+                    cell.style.backgroundColor = COLORS[arr[r][c]];
                 } else {
                     cell.innerText = '';
                     cell.style.backgroundColor = 'rgb(205, 193, 180)';
