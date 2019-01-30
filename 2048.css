@@ -1,7 +1,7 @@
 .title {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    margin: 10px auto;
+    width: 36em;
 }
 
 #btn {
@@ -14,12 +14,14 @@
     border-radius: 18px;
     padding: 5px;
     cursor: pointer;
+    flex: 1;
 } 
 
 .title > p {
     color: rgb(119, 110, 101);
     font-weight: 900;
     font-size: 4em;
+    flex: 2;
 }
 
 #wrapper {
